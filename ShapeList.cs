@@ -18,6 +18,11 @@ namespace firstLab
             shapes.Add(shape);
         }
 
+        public void Clear()
+        {
+            shapes.Clear();
+        }
+
         public void DrawAll(Graphics g, RendererFactory factory)
         {
             foreach (var shape in shapes)

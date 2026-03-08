@@ -21,8 +21,7 @@ namespace firstLab
         private Type selectedShapeType;
         private ShapeCreatorFactory creatorFactory = new ShapeCreatorFactory();
         private Point startPoint;
-        private string selectedShape = "Rectangle";
-       // ShapeList list = new ShapeList();
+       
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +47,7 @@ namespace firstLab
             creatorFactory.Register<SquareShape>(new SquareCreator());
             creatorFactory.Register<TriangleShape>(new TriangleCreator());
 
-            comboBox1.SelectedIndex = 0;
+            comboBox1.SelectedIndex = -1;
 
             comboBox1.SelectedIndexChanged += (s, e) =>
             {
@@ -64,7 +63,7 @@ namespace firstLab
         {
             base.OnPaint(e);
 
-            // Рисуем все фигуры через ShapeList
+            
             shapeList.DrawAll(e.Graphics, rendererFactory);
 
         }
@@ -92,6 +91,12 @@ namespace firstLab
 
             Invalidate();
 
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            shapeList.Clear();   // очищаем список фигур
+            Invalidate();        // перерисовываем форму
         }
     }
     
