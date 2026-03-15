@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace firstLab.Render
 {
     public class RendererFactory
-    {
+    {   //словарь хранит тип фигуры и его отрисовку
         private Dictionary<Type, IShapeRenderer> renderers
         = new Dictionary<Type, IShapeRenderer>();
 

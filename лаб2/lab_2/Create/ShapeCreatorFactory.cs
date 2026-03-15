@@ -10,6 +10,8 @@ namespace firstLab
 {
     public class ShapeCreatorFactory
     {
+        //ключ   → Type
+        //значение → IShapeCreator
         private Dictionary<Type, IShapeCreator> creators
        = new Dictionary<Type, IShapeCreator>();
 

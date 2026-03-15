@@ -10,6 +10,7 @@ namespace firstLab
 {
     public class TriangleCreator : IShapeCreator
     {
+        //создает фигуру
         public IShape Create(Point start, Point end)
         {
             return new TriangleShape(

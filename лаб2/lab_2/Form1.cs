@@ -25,7 +25,7 @@ namespace firstLab
         public Form1()
         {
             InitializeComponent();
-
+            //регистрация
             rendererFactory.Register<RectangleShape>(new RectangleRenderer());
             rendererFactory.Register<CircleShape>(new CircleRenderer());
             rendererFactory.Register<LineShape>(new LineRenderer());
@@ -63,7 +63,7 @@ namespace firstLab
         {
             base.OnPaint(e);
 
-            
+            //отрисовка
             shapeList.DrawAll(e.Graphics, rendererFactory);
 
         }
@@ -81,7 +81,7 @@ namespace firstLab
         private void Form1_MouseUp(object sender, MouseEventArgs e)
         {
             if (selectedShapeType == null) return;
-
+            //создает фигуру
             var shape = creatorFactory.Create(
                 selectedShapeType,
                 startPoint,
@@ -89,7 +89,7 @@ namespace firstLab
 
             shapeList.Add(shape);
 
-            Invalidate();
+            Invalidate();// рисует фигуру
 
         }
 
