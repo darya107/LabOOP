@@ -1,0 +1,11 @@
+D:\ООП\lab_1\firstLab\bin\Debug\firstLab.exe.config
+D:\ООП\lab_1\firstLab\bin\Debug\firstLab.exe
+D:\ООП\lab_1\firstLab\bin\Debug\firstLab.pdb
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.csproj.AssemblyReference.cache
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.Properties.Resources.resources
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.csproj.GenerateResource.cache
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.csproj.CoreCompileInputs.cache
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.exe
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.pdb
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.exe.config
+D:\ООП\lab_1\firstLab\obj\Debug\firstLab.Form1.resources

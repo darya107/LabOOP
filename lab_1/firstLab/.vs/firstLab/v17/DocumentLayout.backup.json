@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|d:\\\u043E\u043E\u043F\\lab_1\\firstlab\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|d:\\\u043E\u043E\u043F\\lab_1\\firstlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapes\\circleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\circleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|d:\\\u043E\u043E\u043F\\lab_1\\firstlab\\shapes\\triangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\triangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B157DCF1-57BA-4BD1-913A-68DE7A7B67E6}|firstLab.csproj|solutionrelative:shapes\\rectangleshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA9wCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T11:16:11.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T11:06:57.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EllipseShape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\EllipseShape.cs",
+              "RelativeDocumentMoniker": "Shapes\\EllipseShape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\EllipseShape.cs",
+              "RelativeToolTip": "Shapes\\EllipseShape.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T16:12:24.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LineShape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\LineShape.cs",
+              "RelativeDocumentMoniker": "Shapes\\LineShape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\LineShape.cs",
+              "RelativeToolTip": "Shapes\\LineShape.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T16:05:51.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T13:47:18.108Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShapeList.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\ShapeList.cs",
+              "RelativeDocumentMoniker": "ShapeList.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\ShapeList.cs",
+              "RelativeToolTip": "ShapeList.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T14:16:30.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\Shape.cs",
+              "RelativeDocumentMoniker": "Shapes\\Shape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\Shape.cs",
+              "RelativeToolTip": "Shapes\\Shape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T14:13:24.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CircleShape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\CircleShape.cs",
+              "RelativeDocumentMoniker": "Shapes\\CircleShape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\CircleShape.cs",
+              "RelativeToolTip": "Shapes\\CircleShape.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T14:13:23.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RectangleShape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\RectangleShape.cs",
+              "RelativeDocumentMoniker": "Shapes\\RectangleShape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\RectangleShape.cs",
+              "RelativeToolTip": "Shapes\\RectangleShape.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T21:25:35.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TriangleShape.cs",
+              "DocumentMoniker": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\TriangleShape.cs",
+              "RelativeDocumentMoniker": "Shapes\\TriangleShape.cs",
+              "ToolTip": "D:\\\u041E\u041E\u041F\\lab_1\\firstLab\\Shapes\\TriangleShape.cs",
+              "RelativeToolTip": "Shapes\\TriangleShape.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T16:29:36.296Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
