@@ -21,7 +21,8 @@ namespace firstLab
         private Type selectedShapeType;
         private ShapeCreatorFactory creatorFactory = new ShapeCreatorFactory();
         private Point startPoint;
-       
+        private ShapeDeserializerFactory deserializerFactory = new ShapeDeserializerFactory();
+
         public Form1()
         {
             InitializeComponent();
@@ -47,6 +48,13 @@ namespace firstLab
             creatorFactory.Register<SquareShape>(new SquareCreator());
             creatorFactory.Register<TriangleShape>(new TriangleCreator());
 
+            deserializerFactory.Register("Circle", data => CircleShape.Deserialize(data));
+            deserializerFactory.Register("Rectangle", data => RectangleShape.Deserialize(data));
+            deserializerFactory.Register("Line", data => LineShape.Deserialize(data));
+            deserializerFactory.Register("Ellipse", data => EllipseShape.Deserialize(data));
+            deserializerFactory.Register("Square", data => SquareShape.Deserialize(data));
+            deserializerFactory.Register("Triangle", data => TriangleShape.Deserialize(data));
+
             comboBox1.SelectedIndex = -1;
 
             comboBox1.SelectedIndexChanged += (s, e) =>
@@ -56,7 +64,15 @@ namespace firstLab
             };
         }
 
+        private void UpdateListBox()
+        {
+            listBoxShapes.Items.Clear();
 
+            foreach (var shape in shapeList.GetAll())
+            {
+                listBoxShapes.Items.Add(shape);
+            }
+        }
 
 
         protected override void OnPaint(PaintEventArgs e)
@@ -88,6 +104,7 @@ namespace firstLab
                 e.Location);
 
             shapeList.Add(shape);
+            UpdateListBox();
 
             Invalidate();// рисует фигуру
 
@@ -96,7 +113,59 @@ namespace firstLab
         private void buttonClear_Click(object sender, EventArgs e)
         {
             shapeList.Clear();   // очищаем список фигур
+            UpdateListBox();
             Invalidate();        // перерисовываем форму
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            shapeList.SaveToFile("shapes.txt");
+        }
+
+        private void buttonLoad_Click(object sender, EventArgs e)
+        {
+            shapeList.LoadFromFile("shapes.txt", deserializerFactory);
+            UpdateListBox();
+            Invalidate();
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            int index = listBoxShapes.SelectedIndex;
+
+            if (index >= 0)
+            {
+                shapeList.RemoveAt(index);
+                UpdateListBox();
+                Invalidate();
+            }
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            int index = listBoxShapes.SelectedIndex;
+            if (index < 0)
+            {
+                MessageBox.Show("Выберите фигуру для редактирования!");
+                return;
+            }
+
+            var shape = shapeList.GetAll()[index];
+
+            if (shape is IEditableShape editableShape)
+            {
+                var editForm = new MyEditShapeForm(editableShape);
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    UpdateListBox(); // обновляем ListBox
+                    Invalidate();   // перерисовываем фигуру
+                }
+            }
+            else
+            {
+                MessageBox.Show("Эта фигура не поддерживает редактирование.");
+            }
         }
     }
     

@@ -57,6 +57,14 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Create\IShapeCreator.cs" />
+    <Compile Include="IEditableShape.cs" />
+    <Compile Include="ITextSerializable.cs" />
+    <Compile Include="MyEditShapeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyEditShapeForm.Designer.cs">
+      <DependentUpon>MyEditShapeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Render\CircleRenderer.cs" />
     <Compile Include="Render\EllipseRenderer.cs" />
     <Compile Include="Render\IShapeRenderer.cs" />
@@ -68,6 +76,7 @@
     <Compile Include="Render\SquareRenderer.cs" />
     <Compile Include="Render\TriangleRenderer.cs" />
     <Compile Include="Create\ShapeCreatorFactory.cs" />
+    <Compile Include="ShapeDeserializerFactory.cs" />
     <Compile Include="ShapeItem.cs" />
     <Compile Include="ShapeList.cs" />
     <Compile Include="Shapes\CircleShape.cs" />
@@ -81,6 +90,9 @@
     <Compile Include="Create\TriangleCreator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyEditShapeForm.resx">
+      <DependentUpon>MyEditShapeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

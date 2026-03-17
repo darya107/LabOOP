@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace firstLab.Shapes
+namespace firstLab
 {
-    public interface IShape : ITextSerializable
+    public interface ITextSerializable
     {
+        string Serialize();
     }
 }
