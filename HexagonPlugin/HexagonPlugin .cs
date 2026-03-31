@@ -17,6 +17,7 @@ namespace HexagonPlugin
         ShapeDeserializerFactory deserializerFactory,
         ComboBox comboBox)
         {
+
             // Hexagon
             rendererFactory.Register<HexagonShape>(new HexagonRenderer());
             creatorFactory.Register<HexagonShape>(new HexagonCreator());
