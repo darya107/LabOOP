@@ -35,13 +35,13 @@ namespace firstLab
             return shapes;
         }
 
-        // 🔽 Сохранение
+        //  Сохранение
         public void SaveToFile(string path)
         {
             File.WriteAllLines(path, shapes.Select(s => s.Serialize()));
         }
 
-        // 🔽 Загрузка
+        //  Загрузка
         public void LoadFromFile(string path, ShapeDeserializerFactory factory)
         {
             shapes.Clear();
@@ -59,7 +59,7 @@ namespace firstLab
                 }
                 catch
                 {
-                    // можно проигнорировать или вывести сообщение
+                    
                     MessageBox.Show($"Ошибка в строке: {line}");
                 }
             }

@@ -35,13 +35,13 @@ namespace firstLab.Shapes
 
         public override string ToString()
         {
-            return "Ellipse"; 
+            return "Ellipse";
         }
 
         public Dictionary<string, int> GetProperties()
         {
             return new Dictionary<string, int>
-    {
+             {
         {"X", X},
         {"Y", Y},
         {"Width", Width},

@@ -1,49 +1,47 @@
-﻿using System;
+﻿using firstLab;
+using firstLab.Shapes;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace firstLab.Shapes
-{
-    public class CircleShape : IShape, IEditableShape
-    {
-        public int X, Y, Radius;
 
-        public CircleShape(int x, int y, int radius)
+namespace HexagonPlugin
+{
+    public class HexagonShape : IShape, IEditableShape
+    {
+        public int X, Y, Size;
+
+        public HexagonShape(int x, int y, int size)
         {
             X = x;
             Y = y;
-            Radius = radius;
+            Size = size;
         }
 
         public string Serialize()
         {
-            return $"Circle {X} {Y} {Radius}";
+            return $"Hexagon {X} {Y} {Size}";
         }
 
-        public static CircleShape Deserialize(string[] data)
+        public static HexagonShape Deserialize(string[] data)
         {
-            return new CircleShape(
+            return new HexagonShape(
                 int.Parse(data[1]),
                 int.Parse(data[2]),
                 int.Parse(data[3]));
         }
 
-        public override string ToString()
-        {
-            return "Circle"; 
-        }
+        public override string ToString() => "Hexagon";
 
-        // Редактирование 
         public Dictionary<string, int> GetProperties()
         {
             return new Dictionary<string, int>
         {
             { "X", X },
             { "Y", Y },
-            { "Radius", Radius }
+            { "Size", Size }
         };
         }
 
@@ -53,7 +51,7 @@ namespace firstLab.Shapes
             {
                 case "X": X = value; break;
                 case "Y": Y = value; break;
-                case "Radius": Radius = value; break;
+                case "Size": Size = value; break;
             }
         }
     }

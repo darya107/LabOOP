@@ -42,10 +42,10 @@ namespace firstLab
                 y += 30;
             }
 
-            // --- кнопка OK ---
+            
             buttonOk.Click += buttonOk_Click;
 
-            // --- кнопка Cancel ---
+            
             buttonCancel.Click += (s, e) => this.Close();
         }
 

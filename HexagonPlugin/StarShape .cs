@@ -1,49 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using firstLab;
+using firstLab.Shapes;
+using System;
 using System.Drawing;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace firstLab.Shapes
+namespace HexagonPlugin
 {
-    public class CircleShape : IShape, IEditableShape
+    public class StarShape : IShape, IEditableShape
     {
-        public int X, Y, Radius;
+        public int X, Y, Size;
 
-        public CircleShape(int x, int y, int radius)
+        public StarShape(int x, int y, int size)
         {
             X = x;
             Y = y;
-            Radius = radius;
+            Size = size;
         }
 
         public string Serialize()
         {
-            return $"Circle {X} {Y} {Radius}";
+            return $"Star {X} {Y} {Size}";
         }
 
-        public static CircleShape Deserialize(string[] data)
+        public static StarShape Deserialize(string[] data)
         {
-            return new CircleShape(
+            return new StarShape(
                 int.Parse(data[1]),
                 int.Parse(data[2]),
                 int.Parse(data[3]));
         }
 
-        public override string ToString()
-        {
-            return "Circle"; 
-        }
+        public override string ToString() => "Star";
 
-        // Редактирование 
         public Dictionary<string, int> GetProperties()
         {
             return new Dictionary<string, int>
         {
-            { "X", X },
-            { "Y", Y },
-            { "Radius", Radius }
+            {"X", X},
+            {"Y", Y},
+            {"Size", Size}
         };
         }
 
@@ -53,7 +51,7 @@ namespace firstLab.Shapes
             {
                 case "X": X = value; break;
                 case "Y": Y = value; break;
-                case "Radius": Radius = value; break;
+                case "Size": Size = value; break;
             }
         }
     }

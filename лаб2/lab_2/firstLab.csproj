@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="Create\IShapeCreator.cs" />
     <Compile Include="IEditableShape.cs" />
+    <Compile Include="IPlugin.cs" />
     <Compile Include="ITextSerializable.cs" />
     <Compile Include="MyEditShapeForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +117,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

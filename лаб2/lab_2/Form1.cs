@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,7 @@ namespace firstLab
                 var item = (ShapeItem)comboBox1.SelectedItem;
                 selectedShapeType = item.ShapeType;
             };
+            LoadPlugins();
         }
 
         private void UpdateListBox()
@@ -119,7 +121,22 @@ namespace firstLab
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            shapeList.SaveToFile("shapes.txt");
+         
+            try
+            {
+                shapeList.SaveToFile("shapes.txt");
+                MessageBox.Show("Фигуры успешно сохранены в файл!",
+                                "Сохранено",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при сохранении: " + ex.Message,
+                                "Ошибка",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
@@ -165,6 +182,29 @@ namespace firstLab
             else
             {
                 MessageBox.Show("Эта фигура не поддерживает редактирование.");
+            }
+        }
+
+        private void LoadPlugins()
+        {
+            string pluginPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Plugins");
+
+            if (!Directory.Exists(pluginPath))
+                return;
+
+            foreach (var file in Directory.GetFiles(pluginPath, "*.dll"))
+            {
+                var assembly = System.Reflection.Assembly.LoadFrom(file);
+
+                var pluginTypes = assembly.GetTypes()
+                    .Where(t => typeof(IPlugin).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract);
+
+                foreach (var type in pluginTypes)
+                {
+                    var plugin = (IPlugin)Activator.CreateInstance(type);
+
+                    plugin.Register(rendererFactory, creatorFactory, deserializerFactory, comboBox1);
+                }
             }
         }
     }

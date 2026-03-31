@@ -41,12 +41,12 @@ namespace firstLab.Shapes
         public Dictionary<string, int> GetProperties()
         {
             return new Dictionary<string, int>
-    {
-        {"X1", X1},
-        {"Y1", Y1},
-        {"X2", X2},
-        {"Y2", Y2}
-    };
+            {
+             {"X1", X1},
+             {"Y1", Y1},
+             {"X2", X2},
+             {"Y2", Y2}
+             };
         }
 
         public void SetProperty(string propertyName, int value)

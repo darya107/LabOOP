@@ -65,7 +65,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MyEditShapeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MyEditShapeForm";
+            this.Text = "Редактирование";
             this.Load += new System.EventHandler(this.MyEditShapeForm_Load);
             this.ResumeLayout(false);
 
