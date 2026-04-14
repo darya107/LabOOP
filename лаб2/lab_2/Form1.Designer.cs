@@ -32,11 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.buttonLoad = new System.Windows.Forms.Button();
-            this.listBoxShapes = new System.Windows.Forms.ListBox();
-            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.listBoxShapes = new System.Windows.Forms.ListBox();
+            this.buttonLoad = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.comboBoxProcessing = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panel1.Controls.Add(this.comboBoxProcessing);
             this.panel1.Controls.Add(this.buttonEdit);
             this.panel1.Controls.Add(this.buttonDelete);
             this.panel1.Controls.Add(this.listBoxShapes);
@@ -87,34 +89,15 @@
             this.panel1.Size = new System.Drawing.Size(216, 543);
             this.panel1.TabIndex = 3;
             // 
-            // buttonSave
+            // buttonEdit
             // 
-            this.buttonSave.Location = new System.Drawing.Point(14, 129);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(172, 37);
-            this.buttonSave.TabIndex = 3;
-            this.buttonSave.Text = "сохранить";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // buttonLoad
-            // 
-            this.buttonLoad.Location = new System.Drawing.Point(14, 172);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(172, 37);
-            this.buttonLoad.TabIndex = 4;
-            this.buttonLoad.Text = "загрузить";
-            this.buttonLoad.UseVisualStyleBackColor = true;
-            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
-            // 
-            // listBoxShapes
-            // 
-            this.listBoxShapes.FormattingEnabled = true;
-            this.listBoxShapes.ItemHeight = 16;
-            this.listBoxShapes.Location = new System.Drawing.Point(7, 235);
-            this.listBoxShapes.Name = "listBoxShapes";
-            this.listBoxShapes.Size = new System.Drawing.Size(197, 116);
-            this.listBoxShapes.TabIndex = 5;
+            this.buttonEdit.Location = new System.Drawing.Point(25, 406);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(161, 43);
+            this.buttonEdit.TabIndex = 7;
+            this.buttonEdit.Text = "изменить";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDelete
             // 
@@ -126,15 +109,42 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // buttonEdit
+            // listBoxShapes
             // 
-            this.buttonEdit.Location = new System.Drawing.Point(25, 406);
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Size = new System.Drawing.Size(161, 43);
-            this.buttonEdit.TabIndex = 7;
-            this.buttonEdit.Text = "изменить";
-            this.buttonEdit.UseVisualStyleBackColor = true;
-            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            this.listBoxShapes.FormattingEnabled = true;
+            this.listBoxShapes.ItemHeight = 16;
+            this.listBoxShapes.Location = new System.Drawing.Point(7, 235);
+            this.listBoxShapes.Name = "listBoxShapes";
+            this.listBoxShapes.Size = new System.Drawing.Size(197, 116);
+            this.listBoxShapes.TabIndex = 5;
+            // 
+            // buttonLoad
+            // 
+            this.buttonLoad.Location = new System.Drawing.Point(14, 172);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(172, 37);
+            this.buttonLoad.TabIndex = 4;
+            this.buttonLoad.Text = "загрузить";
+            this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Location = new System.Drawing.Point(14, 129);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(172, 37);
+            this.buttonSave.TabIndex = 3;
+            this.buttonSave.Text = "сохранить";
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // comboBoxProcessing
+            // 
+            this.comboBoxProcessing.FormattingEnabled = true;
+            this.comboBoxProcessing.Location = new System.Drawing.Point(25, 469);
+            this.comboBoxProcessing.Name = "comboBoxProcessing";
+            this.comboBoxProcessing.Size = new System.Drawing.Size(157, 24);
+            this.comboBoxProcessing.TabIndex = 8;
             // 
             // Form1
             // 
@@ -168,6 +178,7 @@
         private System.Windows.Forms.ListBox listBoxShapes;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.ComboBox comboBoxProcessing;
     }
 }
 

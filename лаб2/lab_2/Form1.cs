@@ -23,6 +23,8 @@ namespace firstLab
         private ShapeCreatorFactory creatorFactory = new ShapeCreatorFactory();
         private Point startPoint;
         private ShapeDeserializerFactory deserializerFactory = new ShapeDeserializerFactory();
+        private IProcessingPlugin currentProcessingPlugin;
+        private List<IProcessingPlugin> processingPlugins = new List<IProcessingPlugin>();
 
         public Form1()
         {
@@ -63,7 +65,19 @@ namespace firstLab
                 var item = (ShapeItem)comboBox1.SelectedItem;
                 selectedShapeType = item.ShapeType;
             };
+
             LoadPlugins();
+
+            comboBoxProcessing.Items.Add("Без обработки");
+            comboBoxProcessing.SelectedIndex = 2;
+
+            comboBoxProcessing.SelectedIndexChanged += (s, e) =>
+            {
+                if (comboBoxProcessing.SelectedItem is IProcessingPlugin plugin)
+                    currentProcessingPlugin = plugin;
+                else
+                    currentProcessingPlugin = null;
+            };
         }
 
         private void UpdateListBox()
@@ -124,7 +138,7 @@ namespace firstLab
          
             try
             {
-                shapeList.SaveToFile("shapes.txt");
+                shapeList.SaveToFile("shapes.txt", currentProcessingPlugin);
                 MessageBox.Show("Фигуры успешно сохранены в файл!",
                                 "Сохранено",
                                 MessageBoxButtons.OK,
@@ -141,7 +155,11 @@ namespace firstLab
 
         private void buttonLoad_Click(object sender, EventArgs e)
         {
-            shapeList.LoadFromFile("shapes.txt", deserializerFactory);
+            shapeList.LoadFromFile(
+    "shapes.txt",
+    deserializerFactory,
+    processingPlugins,
+    comboBoxProcessing);
             UpdateListBox();
             Invalidate();
 
@@ -191,19 +209,32 @@ namespace firstLab
 
             if (!Directory.Exists(pluginPath))
                 return;
-
+             
             foreach (var file in Directory.GetFiles(pluginPath, "*.dll"))
             {
                 var assembly = System.Reflection.Assembly.LoadFrom(file);
+                var types = assembly.GetTypes();
 
-                var pluginTypes = assembly.GetTypes()
+                //  Плагины фигур
+                var pluginTypes = types
                     .Where(t => typeof(IPlugin).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract);
 
                 foreach (var type in pluginTypes)
                 {
                     var plugin = (IPlugin)Activator.CreateInstance(type);
-
                     plugin.Register(rendererFactory, creatorFactory, deserializerFactory, comboBox1);
+                }
+
+                //плагины шифрования 
+                var processingTypes = types
+                    .Where(t => typeof(IProcessingPlugin).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract);
+
+                foreach (var type in processingTypes)
+                {
+                    var plugin = (IProcessingPlugin)Activator.CreateInstance(type);
+                  
+                    processingPlugins.Add(plugin);
+                    comboBoxProcessing.Items.Add(plugin);
                 }
             }
         }

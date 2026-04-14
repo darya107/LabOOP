@@ -59,6 +59,7 @@
     <Compile Include="Create\IShapeCreator.cs" />
     <Compile Include="IEditableShape.cs" />
     <Compile Include="IPlugin.cs" />
+    <Compile Include="IProcessingPlugin.cs" />
     <Compile Include="ITextSerializable.cs" />
     <Compile Include="MyEditShapeForm.cs">
       <SubType>Form</SubType>
